@@ -1,0 +1,9 @@
+
+<ngb-carousel >
+    <ng-template ngbSlide *ngFor="let eproduct of eProducts" >
+      <div class="picsum-img-wrapper">
+        <img [src]="eproduct.imagePath" alt="{{eproduct.name}}"  class="d-block w-100">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+ 

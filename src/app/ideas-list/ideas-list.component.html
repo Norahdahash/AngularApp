@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-ideas-add (ideasAdded)="onIdeaAdded($event)"></app-ideas-add>
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let idea of ideas">
+                <p> {{idea.idea}}<br />{{idea.name}}</p>
+            </li>
+        </ul>
+
+    </div>
+</div>

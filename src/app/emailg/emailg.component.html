@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+    <h1 [translate]="'email.title'"> </h1>
+  </div>
+  <div class="col-12">
+    <ng-container *ngIf="email as email">
+        <h2>{{ email.email+ ' '  | titlecase }}</h2>
+        
+    </ng-container></div>
+    <div class="col-12">
+    <button class="btn btn-primary" [translate]="'email.button'" (click)="changeEmail()"></button> 
+ </div>
+ </div>

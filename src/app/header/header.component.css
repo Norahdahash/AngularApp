@@ -1,0 +1,28 @@
+.navbar{
+    background-image: url('src/assets/img/elm.png');}
+    .navbar a{
+        font-size: 17px;
+    }
+    .navbar-item{
+        padding: 0 15px;
+        
+        
+    }
+    .navbar-nav a:hover {
+        background-color: #b3f0ff;
+        color: #a6a6a6;
+        
+      }
+      .navbar-nav a:active {
+        background-color: black;
+       
+        
+      }
+    ul.navbar-nav > li > a {
+        line-height: 40px;
+    }
+    button{
+        background-color: #b3f0ff;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0.3rem;
+    }

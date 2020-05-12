@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="#"><img class="img" height='45px' width='50px' src="assets/img/20170616163743!Elm_logo.jpg">
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/" href="#" [translate]="'HEADER.home'"> </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/email" href="#" [translate]="'HEADER.email'"> </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/IdeasBank" href="#" [translate]="'HEADER.idea'"> </a>
+      </li>
+      <li ngbDropdown class="nav-item dropdown ">
+        <a [translate]="'HEADER.products'" ngbDropdownToggle class="nav-link dropdown-toggle" href="#"
+          routerLink="/eProducts" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false"> </a>
+        <div ngbDropdownMenu class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [translate]="'HEADER.naql'" routerLink="/eProducts/naql" href="#"></a>
+          <a class="dropdown-item" [translate]="'HEADER.muqeem'" routerLink="/eProducts/muqeem" href="#"></a>
+          <a class="dropdown-item" [translate]="'HEADER.tamm'" routerLink="/eProducts/tamm" href="#"></a>
+
+        </div>
+      </li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li> <a class="nav-link" [translate]="'HEADER.signin'" routerLink="/Signin" href="#">Sign in <span
+            class="sr-only"></span></a> </li>
+      <li class="nav-item"><button class="btn btn-outline-info" (click)="useLanguage('en')">E</button></li>
+      <li class="nav-item"><button class="btn btn-outline-info" (click)="useLanguage('ar')">ع</button></li>
+
+
+
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,13 @@
+.carousel >img{
+    width:640px;
+    height:360px;
+  }
+  .carousel{
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+h3{
+    background-image:url('src/assets/img/elmm.png');
+    font-family: 'Times New Roman'
+}
